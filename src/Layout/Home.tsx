@@ -1,8 +1,9 @@
-import { Button, Divider } from "antd";
+import { Divider } from "antd";
 import PrimaryButton from "./AntComponents/PrimaryButton";
 import styles from "./Home.module.css";
 import { EColors } from "../util/enums/colors";
-import { PhoneOutlined, FacebookOutlined } from "@ant-design/icons";
+
+import Footer from "./Footer";
 export default function Home() {
   return (
     <div>
@@ -163,103 +164,29 @@ export default function Home() {
             </div>
           </section>
         </div>
-        <div className="flex">
-          <img src="/communion.jpg" alt="communion" />
-          <div style={{}} className="flex justify-center items-center w-full ">
-            <div className="text-3xl">
-              <p style={{ fontWeight: "100" }}>
+        <div
+          style={{ height: "27rem", position: "relative", zIndex: 1 }}
+          className="flex items-center  "
+        >
+          <div className={styles.backgroundfirst}></div>
+          <div className={styles.backgroundsecond}></div>
+          <div className={styles.backgroundthird}></div>
+          {/* <img src="/communion.jpg" alt="communion" /> */}
+          <div className="flex justify-center items-center w-full absolute z-10">
+            <div className="text-4xl">
+              <p style={{ fontWeight: "100", color: "white" }}>
                 <em>
                   "Faith is not believing that God can, it's knowing that He
                   will."
                 </em>
               </p>
-              <div className="flex justify-center">
+              <div style={{ color: "white" }} className="flex justify-center">
                 <div>- Rev. Joreatha Barrett</div>
               </div>
             </div>
           </div>
         </div>
-        <footer className="h-9/12" style={{ backgroundColor: EColors.bggray }}>
-          <div className="flex justify-center ">
-            <div className="flex gap-96 mb-14">
-              <div>
-                <div className="grid grid-cols-1 gap-4">
-                  <div className="flex  mt-16">
-                    <img
-                      className=""
-                      src="/salemlogo.png"
-                      alt="burning-bush-logo"
-                    />
-                    <div
-                      className="self-center text-6xl"
-                      style={{
-                        fontFamily: "Merriweather",
-                        color: EColors.gray,
-                      }}
-                    >
-                      SURZUA
-                    </div>
-                  </div>
-                  <div className="ml-5 text-2xl underline font-bold">
-                    <a href="mailto:salemunionrzua@gmail.com">
-                      salemunionrzua@gmail.com
-                    </a>
-                  </div>
-
-                  <div className="ml-5 flex gap-2 text-xl">
-                    <div>
-                      <PhoneOutlined />
-                    </div>
-                    (434) 577-9232
-                  </div>
-                  <div className="ml-5 ">
-                    <div className="font-bold">Address</div>
-
-                    <div>4265 Gasburg Road P.O. Box 363. Gasburg, VA 23857</div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex gap-20">
-                <div className=" ">
-                  <div
-                    style={{ fontFamily: "Inter", fontWeight: "200" }}
-                    className="flex  mt-16 text-3xl mb-6 "
-                  >
-                    About us
-                  </div>
-                  <div className="grid grid-cols-1 gap-2 underline cursor-pointer">
-                    <div>Contact Us</div>
-                    <div>Our Goals</div>
-                    <div>Our Members</div>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    style={{ fontFamily: "Inter", fontWeight: "200" }}
-                    className="flex  mt-16 text-3xl mb-6 "
-                  >
-                    Media
-                  </div>
-                  <div className="flex justify-center text-3xl ">
-                    <FacebookOutlined />
-                  </div>
-                </div>
-                <div>
-                  <div
-                    style={{ fontFamily: "Inter", fontWeight: "200" }}
-                    className="flex  mt-16 text-3xl mb-6 "
-                  >
-                    Other
-                  </div>
-                  <div className="grid grid-cols-1 gap-2 underline cursor-pointer">
-                    Donate
-                  </div>
-                </div>
-                /
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

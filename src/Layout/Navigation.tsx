@@ -5,12 +5,23 @@ import { ERoute } from "../routing/RouteEnums";
 
 export default function Navigation() {
   const navigate = useNavigate();
+
+  function mouseEnter(e: any) {
+    e.currentTarget.style.color = EColors.hover;
+  }
+  function mouseLeave(e: any) {
+    e.currentTarget.style.color = "";
+  }
+
   return (
     <nav
       style={{ zIndex: "1000" }}
       className="sticky bg-white top-0 flex h-36 justify-between"
     >
-      <div className=" flex ml-40 mt-10">
+      <div
+        onClick={() => navigate(ERoute.ROOT)}
+        className=" flex ml-40 mt-10 cursor-pointer"
+      >
         <div className="flex">
           <img className="" src="/salemlogo.png" alt="burning-bush-logo" />
         </div>
@@ -34,13 +45,61 @@ export default function Navigation() {
           </div>
         </div>
       </div>
-      <ul className="flex gap-8 text-lg mr-40 items-center">
-        <li onClick={() => navigate(ERoute.ROOT)}>Home</li>
-        <li onClick={() => navigate(ERoute.ABOUTUS)}>About Us</li>
-        <li>Our Members</li>
-        <li>Events</li>
-        <li>Gallery</li>
-        <li>Visit Us</li>
+      <ul className="flex gap-8 text-lg mr-40 items-center ">
+        <li
+          style={{ transition: "color 0.2s" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
+          className="cursor-pointer"
+          onClick={() => navigate(ERoute.ROOT)}
+        >
+          Home
+        </li>
+        <li
+          style={{ transition: "color 0.2s" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
+          className="cursor-pointer"
+          onClick={() => navigate(ERoute.ABOUTUS)}
+        >
+          About Us
+        </li>
+        <li
+          style={{ transition: "color 0.2s" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
+          className="cursor-pointer"
+          onClick={() => navigate(ERoute.OURMEMBERS)}
+        >
+          Our Members
+        </li>
+        <li
+          style={{ transition: "color 0.2s" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
+          className="cursor-pointer"
+          onClick={() => navigate(ERoute.EVENTS)}
+        >
+          Events
+        </li>
+        <li
+          style={{ transition: "color 0.2s" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
+          className="cursor-pointer"
+          onClick={() => navigate(ERoute.GALLERY)}
+        >
+          Gallery
+        </li>
+        <li
+          style={{ transition: "color 0.2s" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
+          className="cursor-pointer"
+          onClick={() => navigate(ERoute.VISIT)}
+        >
+          Visit Us
+        </li>
         <li>
           <PrimaryButton>Donate</PrimaryButton>
         </li>

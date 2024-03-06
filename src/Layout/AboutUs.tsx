@@ -1,7 +1,86 @@
+import { EColors } from "../util/enums/colors";
+import styles from "./AboutUs.module.css";
+
 export default function AboutUs() {
   return (
     <div>
-      <h1>About Us</h1>
+      <div className={styles.backgroundfirst}>
+        <div className="h-96">
+          <div
+            style={{ fontFamily: "Inter", fontWeight: "200" }}
+            className=" text-3xl h-full text-white flex justify-center items-center"
+          >
+            <div>
+              <div>
+                "And let us consider how we may spur one another on toward
+                <br></br>love and good deeds, not giving up meeting together, as
+                some are in the habit<br></br> of doing, but encouraging one
+                another—and all the more as you <br></br> see the Day
+                approaching."
+              </div>
+              <div className="flex justify-end">
+                <div className="font-bold">- Hebrews 10:24-25</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center mt-40">
+        <div>
+          <div className="flex justify-center">
+            <div
+              className="text-5xl mb-10"
+              style={{
+                color: EColors.primary,
+                fontFamily: "Inter",
+                fontWeight: "200",
+              }}
+            >
+              Come Celebrate Christ With Us
+            </div>
+          </div>
+          <div
+            style={{ fontFamily: "Inter", fontWeight: "300" }}
+            className="flex justify-center text-xl"
+          >
+            <div className="flex gap-4 w-1/2 justify-center">
+              <div className="w-1/2">
+                Welcome to Salem Union, where faith, love, and community meet.
+                Guided by Hebrews 10:24-25, we open our doors to all, inviting
+                you to join us in a journey of encouragement, growth, and shared
+                love. Whether you're exploring faith or deepening your spiritual
+                connection, you're home here.
+              </div>
+              <div className="w-1/2">
+                Our church thrives on Jesus Christ's teachings, fostering a
+                space where transformative love and grace are experienced
+                through worship, study, and fellowship. We're more than Sunday
+                gatherings; we're a family, supporting and celebrating life
+                together, committed to making a meaningful impact.
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ fontFamily: "Inter", fontWeight: "300" }}
+            className="flex justify-center mt-6 text-xl"
+          >
+            <div className="flex gap-4 w-1/2 justify-center">
+              <div className="w-1/2">
+                With a variety of ministries and activities, we welcome
+                everyone, offering diverse ways to connect, serve, and grow.
+                Whether you're interested in social justice, Bible studies, or
+                youth programs, there's a place for you in our community.
+              </div>
+              <div className="w-1/2">
+                Visit us this Sunday for a heartfelt welcome. Come as you are to
+                find open arms and open hearts, ready to embrace and encourage
+                each other in love and good deeds. Let's make a difference
+                together.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

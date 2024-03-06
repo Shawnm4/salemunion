@@ -1,7 +1,11 @@
 import AboutUs from "../Layout/AboutUs";
+import Events from "../Layout/Events";
+import Gallery from "../Layout/Gallery";
 import Home from "../Layout/Home";
 import Layout from "../Layout/Layout";
-import Navigation from "../Layout/Navigation";
+
+import OurMembers from "../Layout/OurMembers";
+import VisitUs from "../Layout/VisitUs";
 import { ERoute } from "./RouteEnums";
 
 export const routes: RouteObject[] = [
@@ -18,16 +22,20 @@ export const routes: RouteObject[] = [
         element: <AboutUs />,
       },
       {
-        path: ERoute.MEMBERS,
-        element: <div>Members</div>,
+        path: ERoute.OURMEMBERS,
+        element: <OurMembers />,
       },
       {
         path: ERoute.EVENTS,
-        element: <div>Events</div>,
+        element: <Events />,
       },
       {
         path: ERoute.VISIT,
-        element: <div>Visit</div>,
+        element: <VisitUs />,
+      },
+      {
+        path: ERoute.GALLERY,
+        element: <Gallery />,
       },
     ],
   },
