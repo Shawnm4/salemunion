@@ -4,7 +4,13 @@ import styles from "./Home.module.css";
 import { EColors } from "../util/enums/colors";
 
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
+import { ERoute } from "../routing/RouteEnums";
 export default function Home() {
+  const navigate = useNavigate();
+  function navigateToVisit() {
+    navigate(ERoute.VISIT);
+  }
   return (
     <div>
       <div style={{ height: "50rem" }}>
@@ -28,7 +34,9 @@ export default function Home() {
             </p>
           </article>
           <div className="mt-20  ">
-            <PrimaryButton className="w-40 h-11">Visit Us</PrimaryButton>
+            <PrimaryButton onClick={navigateToVisit} className="w-40 h-11">
+              Visit Us
+            </PrimaryButton>
           </div>
         </div>
         <div className="" style={{ backgroundColor: EColors.bggray }}>
