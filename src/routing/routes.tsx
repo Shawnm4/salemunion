@@ -1,11 +1,12 @@
-import AboutUs from "../Layout/AboutUs";
-import Events from "../Layout/Events";
-import Gallery from "../Layout/Gallery";
-import Home from "../Layout/Home";
-import Layout from "../Layout/Layout";
+import { RouteObject } from "react-router-dom";
+import AboutUs from "../Layout/Pages/AboutUs";
+import Events from "../Layout/Pages/Events";
+import Gallery from "../Layout/Pages/Gallery";
+import Home from "../Layout/Pages/Home";
+import Layout from "../Layout/Pages/Layout";
 
-import OurMembers from "../Layout/OurMembers";
-import VisitUs from "../Layout/VisitUs";
+import OurMembers from "../Layout/Pages/OurMembers";
+import VisitUs from "../Layout/Pages/VisitUs";
 import { ERoute } from "./RouteEnums";
 
 export const routes: RouteObject[] = [

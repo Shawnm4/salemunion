@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { EColors } from "../util/enums/colors";
-import PrimaryButton from "./AntComponents/PrimaryButton";
-import { ERoute } from "../routing/RouteEnums";
+import { EColors } from "../../util/enums/EColors";
+import PrimaryButton from "../AntComponents/PrimaryButton";
+import { ERoute } from "../../routing/RouteEnums";
 
 export default function Navigation() {
   const navigate = useNavigate();
@@ -15,7 +15,9 @@ export default function Navigation() {
 
   return (
     <nav
-      style={{ zIndex: "1000" }}
+      style={{
+        zIndex: "1000",
+      }}
       className="sticky bg-white top-0 flex h-36 justify-between"
     >
       <div
@@ -64,7 +66,7 @@ export default function Navigation() {
         >
           About Us
         </li>
-        <li
+        {/* <li
           style={{ transition: "color 0.2s" }}
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
@@ -72,8 +74,8 @@ export default function Navigation() {
           onClick={() => navigate(ERoute.OURMEMBERS)}
         >
           Our Members
-        </li>
-        <li
+        </li> */}
+        {/* <li
           style={{ transition: "color 0.2s" }}
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
@@ -81,8 +83,8 @@ export default function Navigation() {
           onClick={() => navigate(ERoute.EVENTS)}
         >
           Events
-        </li>
-        <li
+        </li> */}
+        {/* <li
           style={{ transition: "color 0.2s" }}
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
@@ -90,7 +92,7 @@ export default function Navigation() {
           onClick={() => navigate(ERoute.GALLERY)}
         >
           Gallery
-        </li>
+        </li> */}
         <li
           style={{ transition: "color 0.2s" }}
           onMouseEnter={mouseEnter}

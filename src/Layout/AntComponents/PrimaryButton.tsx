@@ -1,5 +1,5 @@
 import { Button as AntButton, ButtonProps } from "antd";
-import { EColors } from "../../util/enums/colors";
+import { EColors } from "../../util/enums/EColors";
 
 interface AntButtonProps extends ButtonProps {}
 

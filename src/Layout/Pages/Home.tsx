@@ -1,12 +1,18 @@
 import { Divider } from "antd";
-import PrimaryButton from "./AntComponents/PrimaryButton";
+import PrimaryButton from "../AntComponents/PrimaryButton";
 import styles from "./Home.module.css";
-import { EColors } from "../util/enums/colors";
+import { EColors } from "../../util/enums/EColors";
 
 import Footer from "./Footer";
-import { useNavigate } from "react-router-dom";
-import { ERoute } from "../routing/RouteEnums";
+import { useLocation, useNavigate } from "react-router-dom";
+import { ERoute } from "../../routing/RouteEnums";
+import { useEffect } from "react";
 export default function Home() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const navigate = useNavigate();
   function navigateToVisit() {
     navigate(ERoute.VISIT);
@@ -80,6 +86,7 @@ export default function Home() {
                       <a
                         href="https://www.google.com/maps/place/Salem+Union+RZUA+Church/@36.5673515,-77.8984712,17z/data=!3m1!4b1!4m6!3m5!1s0x89ae0717302eee5b:0xc392a35b7c8e986a!8m2!3d36.5673472!4d-77.8958963!16s%2Fg%2F1tjwjmcd?entry=ttu"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         4265 Gasburg Road P.O. Box 363. Gasburg, VA 23857
                       </a>
@@ -133,7 +140,7 @@ export default function Home() {
           </section>
           <Divider />
           <section className="flex justify-start ml-52  ">
-            <div className="mt-20">
+            <div className="mt-20 mb-10">
               <div className="flex gap-28">
                 <img
                   className="w-96 h-96"
@@ -147,10 +154,10 @@ export default function Home() {
                     </p>
                     <p className="mt-4">
                       In today’s fast-paced world, finding time for faith and
-                      community can be a challenge. That’s why [Church Name],
+                      community can be a challenge. That’s why Salem Union,
                       <br></br>
-                      located in the heart of [City/Community Name], is excited
-                      to offer our Cell Phone Church Service—a mobile spiritual
+                      located in the heart of Gasburg,Virginia, is excited to
+                      offer our Cell Phone Church Service—a mobile spiritual
                       <br></br>
                       experience designed for busy lives. Accessible from
                       anywhere, our service allows you to engage in worship,

@@ -1,8 +1,15 @@
-import { EColors } from "../util/enums/colors";
+import { useLocation } from "react-router-dom";
+import { EColors } from "../../util/enums/EColors";
 import styles from "./AboutUs.module.css";
 import Footer from "./Footer";
+import { useEffect } from "react";
 
 export default function AboutUs() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div>
       <div className={styles.backgroundfirst}>
@@ -83,7 +90,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="mt-20" style={{ backgroundColor: EColors.bggray }}>
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <div className="mt-10">
             <div className="flex justify-between ">
               <div className="ml-20">
@@ -117,7 +124,7 @@ export default function AboutUs() {
                     encourage their spiritual growth and build a strong,
                     supportive community among young believers.
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 mb-10">
                     Encourage active participation and leadership within the
                     church and the broader community, highlighting the
                     importance of stewardship and the joy of serving others.
@@ -133,14 +140,46 @@ export default function AboutUs() {
       </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-4 gap-2 grid-rows-2">
-          <img src="about1.jpg" alt="wait" />
-          <img src="about2.jpg" alt="wait" />
-          <img src="about3.jpg" alt="wait" />
-          <img src="about4.jpg" alt="wait" />
-          <img src="about5.jpg" alt="wait" />
-          <img src="about6.jpg" alt="wait" />
-          <img src="about7.jpg" alt="wait" />
-          <img src="about8.jpg" alt="wait" />
+          <img
+            style={{ height: "20rem", width: "20rem" }}
+            src="about1.jpg"
+            alt="wait"
+          />
+          <img
+            style={{ height: "20rem", width: "20rem" }}
+            src="about2.jpg"
+            alt="wait"
+          />
+          <img
+            style={{ height: "20rem", width: "20rem" }}
+            src="about3.jpg"
+            alt="wait"
+          />
+          <img
+            style={{ height: "20rem", width: "20rem" }}
+            src="about4.jpg"
+            alt="wait"
+          />
+          <img
+            style={{ height: "20rem", width: "20rem" }}
+            src="about5.jpg"
+            alt="wait"
+          />
+          <img
+            style={{ height: "20rem", width: "20rem" }}
+            src="about6.jpg"
+            alt="wait"
+          />
+          <img
+            style={{ height: "20rem", width: "20rem" }}
+            src="about7.jpg"
+            alt="wait"
+          />
+          <img
+            style={{ height: "20rem", width: "20rem" }}
+            src="about8.jpg"
+            alt="wait"
+          />
         </div>
       </div>
       <Footer />

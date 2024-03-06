@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { EColors } from "../util/enums/colors";
-import { ERoute } from "../routing/RouteEnums";
+import { EColors } from "../../util/enums/EColors";
+import { ERoute } from "../../routing/RouteEnums";
 import { PhoneOutlined, FacebookOutlined } from "@ant-design/icons";
 
 export default function Footer() {
@@ -12,9 +12,7 @@ export default function Footer() {
   function navigateToAboutUs() {
     navigate(ERoute.ABOUTUS);
   }
-  function navigateToOurMembers() {
-    navigate(ERoute.OURMEMBERS);
-  }
+
   return (
     <footer className="h-9/12" style={{ backgroundColor: EColors.bggray }}>
       <div className="flex justify-center ">
@@ -67,7 +65,6 @@ export default function Footer() {
               <div className="grid grid-cols-1 gap-2 underline cursor-pointer">
                 <div onClick={navigateToVisit}>Contact Us</div>
                 <div onClick={navigateToAboutUs}>Our Goals</div>
-                <div onClick={navigateToOurMembers}>Our Members</div>
               </div>
             </div>
             <div>
