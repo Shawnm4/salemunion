@@ -15,9 +15,9 @@ export default function Footer() {
 
   return (
     <footer className="h-9/12" style={{ backgroundColor: EColors.bggray }}>
-      <div className="flex justify-center ">
+      <main className="flex justify-center ">
         <div className="flex gap-96 mb-14">
-          <div>
+          <section>
             <div className="grid grid-cols-1 gap-4">
               <div className="flex  mt-16">
                 <img
@@ -25,36 +25,38 @@ export default function Footer() {
                   src="/salemlogo.png"
                   alt="burning-bush-logo"
                 />
-                <div
+                <h1
                   className="self-center text-6xl"
                   style={{
                     fontFamily: "Merriweather",
                     color: EColors.gray,
                   }}
                 >
-                  SURZUA
-                </div>
+                  <strong>SURZUA</strong>
+                </h1>
               </div>
-              <div className="ml-5 text-2xl underline font-bold">
+              <p className="ml-5 text-2xl underline font-bold">
                 <a href="mailto:salemunionrzua@gmail.com">
-                  salemunionrzua@gmail.com
+                  <strong>salemunionrzua@gmail.com</strong>
                 </a>
-              </div>
+              </p>
 
-              <div className="ml-5 flex gap-2 text-xl">
+              <p className="ml-5 flex gap-2 text-xl">
                 <div>
                   <PhoneOutlined />
                 </div>
                 (434) 577-9232
-              </div>
+              </p>
               <div className="ml-5 ">
                 <div className="font-bold">Address</div>
 
-                <div>4265 Gasburg Road P.O. Box 363. Gasburg, VA 23857</div>
+                <strong>
+                  4265 Gasburg Road P.O. Box 363. Gasburg, VA 23857
+                </strong>
               </div>
             </div>
-          </div>
-          <div className="flex gap-20">
+          </section>
+          <section className="flex gap-20">
             <div className=" ">
               <div
                 style={{ fontFamily: "Inter", fontWeight: "200" }}
@@ -63,17 +65,17 @@ export default function Footer() {
                 About us
               </div>
               <div className="grid grid-cols-1 gap-2 underline cursor-pointer">
-                <div onClick={navigateToVisit}>Contact Us</div>
-                <div onClick={navigateToAboutUs}>Our Goals</div>
+                <p onClick={navigateToVisit}>Contact Us</p>
+                <p onClick={navigateToAboutUs}>Our Goals</p>
               </div>
             </div>
             <div>
-              <div
+              <p
                 style={{ fontFamily: "Inter", fontWeight: "200" }}
                 className="flex  mt-16 text-3xl mb-6 "
               >
                 Media
-              </div>
+              </p>
               <div className="flex justify-center text-3xl ">
                 <a
                   href=" https://www.facebook.com/SalemUnionRZUA"
@@ -84,20 +86,20 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <div
+              <p
                 style={{ fontFamily: "Inter", fontWeight: "200" }}
                 className="flex  mt-16 text-3xl mb-6 "
               >
                 Other
-              </div>
-              <div className="grid grid-cols-1 gap-2 underline cursor-pointer">
+              </p>
+              <p className="grid grid-cols-1 gap-2 underline cursor-pointer">
                 Donate
-              </div>
+              </p>
             </div>
             /
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
     </footer>
   );
 }

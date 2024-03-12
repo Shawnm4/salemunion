@@ -20,13 +20,13 @@ export default function Home() {
   return (
     <div>
       <div style={{ height: "50rem" }}>
-        <div className={styles.background}>
-          <div
+        <article className={styles.background}>
+          <h1
             style={{ fontWeight: "200", fontFamily: "Inter", color: "white" }}
             className="text-6xl"
           >
             Faith, Fellowship, and Service: Welcome to Salem Union
-          </div>
+          </h1>
           <article
             className=" text-xl"
             style={{ fontWeight: "100", color: "white" }}
@@ -44,8 +44,8 @@ export default function Home() {
               Visit Us
             </PrimaryButton>
           </div>
-        </div>
-        <div className="" style={{ backgroundColor: EColors.bggray }}>
+        </article>
+        <main className="" style={{ backgroundColor: EColors.bggray }}>
           <section className="flex justify-start ml-52  ">
             <div className="mt-20">
               <div className="flex gap-28">
@@ -54,9 +54,11 @@ export default function Home() {
                   src="/firstpic.jpg"
                   alt="people-hugging"
                 />
-                <div className="grid grid-cols-1">
+                <article className="grid grid-cols-1">
                   <div className="flex gap-4">
-                    <p className=" text-4xl font-bold">Regular Service -</p>
+                    <p className=" text-4xl font-bold">
+                      <strong>Salem Unions Regular Service -</strong>
+                    </p>
                     <p style={{ fontWeight: "100" }} className=" text-4xl ">
                       Join us for service at 11am every Sunday
                     </p>
@@ -88,17 +90,19 @@ export default function Home() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        4265 Gasburg Road P.O. Box 363. Gasburg, VA 23857
+                        <strong>
+                          4265 Gasburg Road P.O. Box 363. Gasburg, VA 23857
+                        </strong>
                       </a>
                     </div>
                   </div>
-                </div>
+                </article>
               </div>
             </div>
           </section>
           <Divider />
           <section className="flex justify-start ml-52  ">
-            <div className="mt-20">
+            <article className="mt-20">
               <div className="flex gap-28">
                 <img
                   className="w-96"
@@ -107,9 +111,11 @@ export default function Home() {
                 />
                 <div className="grid grid-cols-1">
                   <div className="flex gap-4">
-                    <p className=" text-4xl font-bold">Sunday School -</p>
+                    <p className=" text-4xl font-bold">
+                      <strong>Sunday School -</strong>
+                    </p>
                     <p style={{ fontWeight: "100" }} className=" text-4xl ">
-                      Sunday School is held every Sunday at 10am
+                      Salem Unions Sunday School is held every Sunday at 10am
                     </p>
                   </div>
                   <p>
@@ -136,7 +142,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </section>
           <Divider />
           <section className="flex justify-start ml-52  ">
@@ -150,7 +156,9 @@ export default function Home() {
                 <div className="grid grid-cols-1">
                   <div className="">
                     <p className=" text-4xl font-bold">
-                      Prayer Lines and Fourth Sunday Service
+                      <strong>
+                        Salem Union Prayer Lines and Fourth Sunday Service
+                      </strong>
                     </p>
                     <p className="mt-4">
                       In today’s fast-paced world, finding time for faith and
@@ -178,7 +186,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </div>
+        </main>
         <div
           style={{ height: "27rem", position: "relative", zIndex: 1 }}
           className="flex items-center  "
