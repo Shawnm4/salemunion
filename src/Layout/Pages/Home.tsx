@@ -214,7 +214,6 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-      <div className="md:hidden"></div>
     </>
   );
 }
