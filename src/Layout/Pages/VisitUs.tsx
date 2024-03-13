@@ -9,7 +9,7 @@ export default function VisitUs() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <div className="mt-24 ">
+    <div className="mt-24  ">
       <main className="flex justify-center gap-60 mb-16">
         <section className="">
           <p
