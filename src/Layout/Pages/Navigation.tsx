@@ -3,6 +3,7 @@ import { EColors } from "../../util/enums/EColors";
 import PrimaryButton from "../AntComponents/PrimaryButton";
 import { ERoute } from "../../routing/RouteEnums";
 import { MenuOutlined } from "@ant-design/icons";
+import { Dropdown, Space, MenuProps } from "antd";
 
 export default function Navigation() {
   const navigate = useNavigate();
@@ -14,16 +15,64 @@ export default function Navigation() {
     e.currentTarget.style.color = "";
   }
 
+  function navigateToHome() {
+    navigate(ERoute.ROOT);
+  }
+
+  function navigateToAboutUs() {
+    navigate(ERoute.ABOUTUS);
+  }
+  function navigateToVisit() {
+    navigate(ERoute.VISIT);
+  }
+
+  const items: MenuProps["items"] = [
+    {
+      key: "1",
+      label: <div onClick={navigateToHome}>Home</div>,
+    },
+    {
+      key: "2",
+      label: <div onClick={navigateToAboutUs}>About Us</div>,
+    },
+    {
+      key: "3",
+      label: <div onClick={navigateToVisit}>Visit Us</div>,
+    },
+    {
+      key: "4",
+      label: <div>Donate</div>,
+    },
+  ];
+
   return (
     <>
-      <nav className="md:hidden text-black  ">
-        <section className="flex justify-evenly mt-1">
-          <div className="flex items-center  text-3xl">
-            <MenuOutlined />
+      <nav
+        style={{ zIndex: "1000" }}
+        className="lg:hidden text-black fixed  w-full  bg-white shadow-md "
+      >
+        <section className="flex justify-between mt-1 gap-14">
+          <div className="flex items-center  text-3xl ">
+            <Dropdown menu={{ items }} className="mb-2 ">
+              <a>
+                <Space>
+                  <span className="ml-1 md:ml-5">
+                    <MenuOutlined />
+                  </span>
+                </Space>
+              </a>
+            </Dropdown>
           </div>
-          <div className="flex items-center justify-end">
+          <div className="hidden md:flex justify-center">
             <img
-              className="w-1/4 "
+              className="w-1/2 "
+              src="/salemlogo.png"
+              alt="burning-bush-logo"
+            />
+          </div>
+          <div className=" flex items-center ">
+            <img
+              className="w-1/4 md:hidden "
               src="/salemlogo.png"
               alt="burning-bush-logo"
             />
@@ -34,7 +83,7 @@ export default function Navigation() {
                 SALEM UNION
               </strong>
               <div className="flex gap-1 " style={{ fontFamily: "Inter" }}>
-                <span style={{ color: "#e03131" }}> R.Z.U.A</span>
+                <span style={{ color: EColors.primary }}> R.Z.U.A</span>
                 <div>CHURCH</div>
               </div>
             </div>
@@ -45,14 +94,14 @@ export default function Navigation() {
         style={{
           zIndex: "1000",
         }}
-        className="hidden  md:flex justify-between items-center fixed w-full bg-white shadow-md"
+        className="hidden  lg:flex justify-between items-center fixed w-full h-44 bg-white shadow-md"
       >
         <div
           onClick={() => navigate(ERoute.ROOT)}
-          className=" flex ml-40 mt-10 cursor-pointer"
+          className=" flex ml-40 mt-10 cursor-pointer mb-5   "
         >
-          <div className="flex">
-            <img className="" src="/salemlogo.png" alt="burning-bush-logo" />
+          <div className="flex ">
+            <img src="/salemlogo.png" alt="burning-bush-logo" />
           </div>
           <div className="flex items-center">
             <div>
@@ -62,7 +111,7 @@ export default function Navigation() {
               >
                 SALEM UNION
               </h1>
-              <div className="flex justify-center">
+              <div className=" md:justify-start flex justify-center">
                 <h2
                   className="flex gap-2 text-2xl"
                   style={{ fontFamily: "Inter" }}
@@ -80,7 +129,7 @@ export default function Navigation() {
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
             className="cursor-pointer"
-            onClick={() => navigate(ERoute.ROOT)}
+            onClick={navigateToHome}
           >
             Home
           </li>
@@ -89,7 +138,7 @@ export default function Navigation() {
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
             className="cursor-pointer"
-            onClick={() => navigate(ERoute.ABOUTUS)}
+            onClick={navigateToAboutUs}
           >
             About Us
           </li>
@@ -125,7 +174,7 @@ export default function Navigation() {
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
             className="cursor-pointer"
-            onClick={() => navigate(ERoute.VISIT)}
+            onClick={navigateToVisit}
           >
             Visit Us
           </li>
