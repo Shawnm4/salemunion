@@ -43,7 +43,7 @@ export default function Navigation() {
     <>
       <nav
         style={{ zIndex: "1000" }}
-        className="lg:hidden text-black fixed  w-full  bg-white shadow-md "
+        className="lg:hidden text-black sticky top-0 w-full  bg-white shadow-md "
       >
         <>
           <Drawer
@@ -147,11 +147,12 @@ export default function Navigation() {
         </section>
       </nav>
       {/* Desktop */}
+
       <nav
         style={{
           zIndex: "1000",
         }}
-        className="hidden  lg:flex justify-between items-center fixed w-full h-44 bg-white shadow-md"
+        className="hidden md:flex justify-between items-center sticky top-0    w-full h-44 bg-white shadow-md"
       >
         <div
           onClick={() => navigate(ERoute.ROOT)}

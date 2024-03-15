@@ -170,7 +170,7 @@ export default function Home() {
         <Footer />
       </div>
       {/* Desktop */}
-      <div className=" hidden 2xl:inline-block ">
+      <div className=" hidden 2xl:inline ">
         <div style={{ height: "50rem" }}>
           <article className={styles.background}>
             <h1
