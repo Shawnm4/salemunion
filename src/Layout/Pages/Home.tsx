@@ -166,6 +166,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
       {/* Desktop */}
       <div className=" hidden 2xl:inline-block ">
         <div style={{ height: "50rem" }}>
