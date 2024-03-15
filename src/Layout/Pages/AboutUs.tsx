@@ -12,10 +12,112 @@ export default function AboutUs() {
   }, [pathname]);
   return (
     <>
-      <div></div>
+      {/* Phone */}
+      <div className="md:hidden">
+        <div
+          style={{ height: "13rem", fontFamily: "Inter" }}
+          className={styles.backgroundfirst}
+        >
+          <div className="w-3/4 text-white text-xl">
+            A welcoming beacon of faith and community, our church embraces all
+            with open hearts and spiritual nourishment
+          </div>
+        </div>
+        <div
+          className="font-bold mt-10 text-2xl text-center"
+          style={{
+            fontFamily: "Inter",
+            fontWeight: "300",
+            color: EColors.primary,
+          }}
+        >
+          Come Celebrate Christ With Us
+        </div>
+        <div style={{ fontFamily: "Inter" }} className="text-center mt-5">
+          Welcome to Salem Union, where faith, love, and community meet. Guided
+          by Hebrews 10:24-25, we open our doors to all, inviting you to join us
+          in a journey of encouragement, growth, and shared love. Whether you're
+          exploring faith or deepening your spiritual connection, you're home
+          here.
+        </div>
+        <div style={{ fontFamily: "Inter" }} className="text-center mt-5">
+          Our church thrives on Jesus Christ's teachings, fostering a space
+          where transformative love and grace are experienced through worship,
+          study, and fellowship. We're more than Sunday gatherings; we're a
+          family, supporting and celebrating life together, committed to making
+          a meaningful impact.
+        </div>
+        <div style={{ fontFamily: "Inter" }} className="text-center mt-5">
+          With a variety of ministries and activities, we welcome everyone,
+          offering diverse ways to connect, serve, and grow. Whether you're
+          interested in social justice, Bible studies, or youth programs,
+          there's a place for you in our community.
+        </div>
+        <div style={{ fontFamily: "Inter" }} className="text-center mt-5">
+          Visit us this Sunday for a heartfelt welcome. Come as you are to find
+          open arms and open hearts, ready to embrace and encourage each other
+          in love and good deeds. Let's make a difference together.
+        </div>
+        <div className="mt-5 ">
+          <img src="/peopleoutside.jpg" alt="peoplestandingoutside" />
+        </div>
+        <div className="mt-5">
+          <img src="/sundayschool.jpg" alt="peoplestandingoutside" />
+        </div>
+        <div className="mt-5">
+          <img src="/communion.jpg" alt="peoplestandingoutside" />
+        </div>
+        <div
+          className="font-bold mt-10 text-2xl text-center"
+          style={{
+            fontFamily: "Inter",
+            fontWeight: "300",
+            color: EColors.primary,
+          }}
+        >
+          Our Goals!
+        </div>
+        <div>
+          <div className="text-center mt-5" style={{ fontFamily: "Inter" }}>
+            Aim to deepen the congregation's faith and understanding of the
+            Bible through regular study groups, retreats, and discipleship
+            programs.
+          </div>
+          <div className="text-center mt-5" style={{ fontFamily: "Inter" }}>
+            Establish and expand outreach programs to serve the local
+            community's needs, such as food banks, homeless shelters, and
+            support for vulnerable populations.
+          </div>
+          <div className="text-center mt-5" style={{ fontFamily: "Inter" }}>
+            Ensure that the church is a place where everyone feels welcomed and
+            valued, regardless of their background or life situation, fostering
+            a sense of belonging and inclusivity.
+          </div>
+          <div className="text-center mt-5" style={{ fontFamily: "Inter" }}>
+            Develop engaging programs for children and youth that encourage
+            their spiritual growth and build a strong, supportive community
+            among young believers.
+          </div>
+          <div className="text-center mt-5" style={{ fontFamily: "Inter" }}>
+            Encourage active participation and leadership within the church and
+            the broader community, highlighting the importance of stewardship
+            and the joy of serving others.
+          </div>
+          <div className=" mt-5">
+            <img className="" src="/about1.jpg" alt="familystanding" />
+          </div>
+          <div className=" mt-5">
+            <img className="" src="/about7.jpg" alt="familystanding" />
+          </div>
+          <div className=" mt-5">
+            <img className="" src="/about8.jpg" alt="familystanding" />
+          </div>
+        </div>
+        <Footer />
+      </div>
 
       {/* Desktop */}
-      <div className="">
+      <div className="hidden lg:inline-block">
         <header className={styles.backgroundfirst}>
           <section className="h-96">
             <div

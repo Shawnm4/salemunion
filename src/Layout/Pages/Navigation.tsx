@@ -41,9 +41,10 @@ export default function Navigation() {
 
   return (
     <>
+      {/* Phone */}
       <nav
         style={{ zIndex: "1000" }}
-        className="lg:hidden text-black sticky top-0 w-full  bg-white shadow-md "
+        className="lg:hidden flex items-center justify-center text-black sticky top-0 w-full h-24  bg-white shadow-md "
       >
         <>
           <Drawer
@@ -76,7 +77,7 @@ export default function Navigation() {
             onClose={onCloseDrawer}
             open={open}
           >
-            <div className=" flex justify-center">
+            <div className=" flex justify-center ">
               <div className="text-4xl">
                 <ul
                   style={{ fontFamily: "Inter" }}
@@ -111,7 +112,7 @@ export default function Navigation() {
             </div>
           </Drawer>
         </>
-        <section className="flex justify-between mt-1 gap-14">
+        <section className="flex justify-between mt-1 gap-14 ">
           <div className="flex items-center  text-3xl ">
             <Space>
               <span className="ml-1 md:ml-5">
