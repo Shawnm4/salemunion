@@ -19,7 +19,10 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="pt-5" style={{ backgroundColor: EColors.bggray }}>
+      <footer
+        className=" md:hidden pt-5"
+        style={{ backgroundColor: EColors.bggray }}
+      >
         <div className="ml-10">
           <div className="flex mb-8">
             <img className="w-20" src="/salemlogo.png" alt="salemunionlogo" />
@@ -96,7 +99,7 @@ export default function Footer() {
 
       {/*  */}
       <footer
-        className="hidden h-9/12"
+        className="hidden md:inline h-9/12"
         style={{ backgroundColor: EColors.bggray }}
       >
         <main className="flex justify-center ">

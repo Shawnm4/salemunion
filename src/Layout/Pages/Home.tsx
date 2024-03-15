@@ -22,7 +22,7 @@ export default function Home() {
   }
   return (
     <>
-      <div className=" md:hidden flex justify-center">
+      <div className=" md:hidden flex justify-center ">
         <div className="flex justify-center">
           <div className="grid grid-cols-1 gap-6 ">
             <img src="/homebackground.jpg" alt="burning-bush-logo" />
@@ -166,7 +166,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="md:hidden">
+        <Footer />
+      </div>
       {/* Desktop */}
       <div className=" hidden 2xl:inline-block ">
         <div style={{ height: "50rem" }}>

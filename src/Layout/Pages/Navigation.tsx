@@ -3,9 +3,19 @@ import { EColors } from "../../util/enums/EColors";
 import PrimaryButton from "../AntComponents/PrimaryButton";
 import { ERoute } from "../../routing/RouteEnums";
 import { MenuOutlined } from "@ant-design/icons";
-import { Dropdown, Space, MenuProps } from "antd";
+import { Space, Drawer } from "antd";
+import { useState } from "react";
 
 export default function Navigation() {
+  const [open, setOpen] = useState(false);
+  const onOpenDrawer = () => {
+    setOpen(true);
+  };
+
+  const onCloseDrawer = () => {
+    setOpen(false);
+  };
+
   const navigate = useNavigate();
 
   function mouseEnter(e: any) {
@@ -17,33 +27,17 @@ export default function Navigation() {
 
   function navigateToHome() {
     navigate(ERoute.ROOT);
+    onCloseDrawer();
   }
 
   function navigateToAboutUs() {
     navigate(ERoute.ABOUTUS);
+    onCloseDrawer();
   }
   function navigateToVisit() {
     navigate(ERoute.VISIT);
+    onCloseDrawer();
   }
-
-  const items: MenuProps["items"] = [
-    {
-      key: "1",
-      label: <div onClick={navigateToHome}>Home</div>,
-    },
-    {
-      key: "2",
-      label: <div onClick={navigateToAboutUs}>About Us</div>,
-    },
-    {
-      key: "3",
-      label: <div onClick={navigateToVisit}>Visit Us</div>,
-    },
-    {
-      key: "4",
-      label: <div>Donate</div>,
-    },
-  ];
 
   return (
     <>
@@ -51,17 +45,79 @@ export default function Navigation() {
         style={{ zIndex: "1000" }}
         className="lg:hidden text-black fixed  w-full  bg-white shadow-md "
       >
+        <>
+          <Drawer
+            style={{ width: "100%" }}
+            title={
+              <div>
+                {" "}
+                <div className="flex  ">
+                  <img
+                    className="w-20"
+                    src="/salemlogo.png"
+                    alt="salemunionlogo"
+                  />
+                  <div className="flex items-center">
+                    <ul
+                      style={{ fontFamily: "Merriweather" }}
+                      className="flex gap-1 text-4xl "
+                    >
+                      <li style={{ color: EColors.primary }}>S</li>
+                      <li style={{ color: EColors.primary }}>U</li>
+                      <li style={{ color: EColors.gray }}>R</li>
+                      <li style={{ color: EColors.gray }}>Z</li>
+                      <li style={{ color: EColors.gray }}>U</li>
+                      <li style={{ color: EColors.gray }}>A</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            }
+            onClose={onCloseDrawer}
+            open={open}
+          >
+            <div className=" flex justify-center">
+              <div className="text-4xl">
+                <ul
+                  style={{ fontFamily: "Inter" }}
+                  className=" grid grid-cols-1 gap-5 "
+                >
+                  <li>
+                    <div onClick={navigateToHome} className="cursor-pointer ">
+                      Home
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      onClick={navigateToAboutUs}
+                      className="cursor-pointer "
+                    >
+                      About Us
+                    </div>
+                  </li>
+
+                  <li>
+                    <div onClick={navigateToVisit} className="cursor-pointer ">
+                      Visit Us
+                    </div>
+                  </li>
+                  <li className="text-center ">
+                    <PrimaryButton className="text-1xl h-16 w-40">
+                      DONATE
+                    </PrimaryButton>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </Drawer>
+        </>
         <section className="flex justify-between mt-1 gap-14">
           <div className="flex items-center  text-3xl ">
-            <Dropdown menu={{ items }} className="mb-2 ">
-              <a>
-                <Space>
-                  <span className="ml-1 md:ml-5">
-                    <MenuOutlined />
-                  </span>
-                </Space>
-              </a>
-            </Dropdown>
+            <Space>
+              <span className="ml-1 md:ml-5">
+                <MenuOutlined onClick={onOpenDrawer} />
+              </span>
+            </Space>
           </div>
           <div className="hidden md:flex justify-center">
             <img
@@ -90,6 +146,7 @@ export default function Navigation() {
           </div>
         </section>
       </nav>
+      {/* Desktop */}
       <nav
         style={{
           zIndex: "1000",
@@ -179,7 +236,7 @@ export default function Navigation() {
             Visit Us
           </li>
           <li>
-            <PrimaryButton>Donate</PrimaryButton>
+            <PrimaryButton className="">Donate</PrimaryButton>
           </li>
         </ul>
       </nav>
