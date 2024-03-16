@@ -1,3 +1,4 @@
+//Waiting for events
 export default function Events() {
   return (
     <div>

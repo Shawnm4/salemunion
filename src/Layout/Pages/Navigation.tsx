@@ -133,7 +133,7 @@ export default function Navigation() {
               src="/salemlogo.png"
               alt="burning-bush-logo"
             />
-            <div>
+            <h1>
               <strong
                 style={{ fontFamily: "Merriweather", color: EColors.gray }}
               >
@@ -143,7 +143,7 @@ export default function Navigation() {
                 <span style={{ color: EColors.primary }}> R.Z.U.A</span>
                 <div>CHURCH</div>
               </div>
-            </div>
+            </h1>
           </div>
         </section>
       </nav>
@@ -201,33 +201,6 @@ export default function Navigation() {
           >
             About Us
           </li>
-          {/* <li
-          style={{ transition: "color 0.2s" }}
-          onMouseEnter={mouseEnter}
-          onMouseLeave={mouseLeave}
-          className="cursor-pointer"
-          onClick={() => navigate(ERoute.OURMEMBERS)}
-          >
-          Our Members
-        </li> */}
-          {/* <li
-          style={{ transition: "color 0.2s" }}
-          onMouseEnter={mouseEnter}
-          onMouseLeave={mouseLeave}
-          className="cursor-pointer"
-          onClick={() => navigate(ERoute.EVENTS)}
-          >
-          Events
-        </li> */}
-          {/* <li
-          style={{ transition: "color 0.2s" }}
-          onMouseEnter={mouseEnter}
-          onMouseLeave={mouseLeave}
-          className="cursor-pointer"
-          onClick={() => navigate(ERoute.GALLERY)}
-          >
-          Gallery
-        </li> */}
           <li
             style={{ transition: "color 0.2s" }}
             onMouseEnter={mouseEnter}

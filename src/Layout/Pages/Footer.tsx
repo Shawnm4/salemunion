@@ -99,7 +99,7 @@ export default function Footer() {
 
       {/*  */}
       <footer
-        className="flex justify-center hidden  lg:inline h-9/12"
+        className=" justify-center hidden  lg:inline h-9/12"
         style={{ backgroundColor: EColors.bggray }}
       >
         <main className="flex justify-center ">

@@ -1,3 +1,4 @@
+//Waiting for pics
 export default function Gallery() {
   return (
     <div>

@@ -27,7 +27,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="grid grid-cols-1 gap-6 ">
               <img
-                className="w-full"
+                className="w-full rounded shadow-xl"
                 src="/homebackground.jpg"
                 alt="burning-bush-logo"
               />
@@ -51,7 +51,10 @@ export default function Home() {
                 </p>
               </article>
               <div className="text-center mb-10">
-                <PrimaryButton className="w-1/2 " onClick={navigateToAbout}>
+                <PrimaryButton
+                  className="w-1/2 shadow-2xl "
+                  onClick={navigateToAbout}
+                >
                   About Us
                 </PrimaryButton>
               </div>
@@ -64,7 +67,11 @@ export default function Home() {
         >
           <div className="">
             <div className="flex justify-center">
-              <img className="w-3/4 mt-10" src="/crowd2.jpg " alt=" crowd " />
+              <img
+                className="w-3/4 rounded-lg shadow-2xl mt-10"
+                src="/crowd2.jpg "
+                alt=" crowd "
+              />
             </div>
             <div
               style={{ fontFamily: "Inter" }}
@@ -79,27 +86,27 @@ export default function Home() {
                   {" "}
                   service at 11am every Sunday!
                 </div>
-                <div className="mt-5">
+                <p className="mt-5">
                   {" "}
                   Each service is a spiritual journey, designed to connect you
                   with the divine and the community.{" "}
-                </div>
+                </p>
 
-                <div className="mt-5">
+                <p className="mt-5">
                   Begin your worship experience with us through uplifting music
                   and songs. Our Choir leads us in a blend of contemporary and
                   traditional hymns that prepare our hearts for receiving God's
                   Word.
-                </div>
-                <div className="mt-5">
+                </p>
+                <p className="mt-5">
                   Rev. Joreatha Barret delivers thought-provoking and
                   soul-stirring messages based on Scripture These teachings aim
                   to deepen your understanding of the Bible and apply its
                   lessons to modern life.
-                </div>
-                <div className="text-xl font-bold mt-5">
+                </p>
+                <p className="text-xl font-bold mt-5">
                   <em>Service is held on church/prayer line on 4th Sundays</em>
-                </div>
+                </p>
                 <div className="my-5">
                   <div>
                     To join the service, dial
@@ -112,7 +119,7 @@ export default function Home() {
                 <div className=" mt-5">
                   <PrimaryButton
                     onClick={navigateToVisit}
-                    className="w-40 h-11"
+                    className="w-40 h-11 shadow-2xl"
                   >
                     Visit Us
                   </PrimaryButton>
@@ -125,28 +132,28 @@ export default function Home() {
                     is held every Sunday at 10am!
                   </span>
                 </div>
-                <div className="mt-5">
+                <p className="mt-5">
                   Designed for all ages, our Sunday School provides a warm,
                   engaging environment where attendees can journey through faith
                   together
-                </div>
+                </p>
 
-                <div className="mt-5">
+                <p className="mt-5">
                   Our goal is to help each participant grow in their faith and
                   understanding of God’s Word. Through biblical teachings,
                   prayer, and reflection, students are encouraged to develop a
                   deeper relationship with God and apply their faith to daily
                   life.
-                </div>
-                <div className="mt-5">
+                </p>
+                <p className="mt-5">
                   Sunday School at Salem Union is more than just learning; it’s
                   about building connections. We foster a nurturing environment
                   where students<br></br> support and learn from one another,
                   forming lasting friendships grounded in faith.
-                </div>
-                <div className="text-xl font-bold mt-5">
+                </p>
+                <p className="text-xl font-bold mt-5">
                   <em>Sunday school is not held on 4th Sundays</em>
-                </div>
+                </p>
                 <div className="my-5">
                   <div>
                     To join the Sunday School line, dial
@@ -162,7 +169,7 @@ export default function Home() {
                     Salem Union Prayer Lines and Fourth Sunday Service
                   </strong>
                 </div>
-                <div className="mt-5">
+                <p className="mt-5">
                   In today’s fast-paced world, finding time for faith and
                   community can be a challenge. That’s why Salem Union, located
                   in the heart of Gasburg,Virginia, is excited to offer our Cell
@@ -171,13 +178,13 @@ export default function Home() {
                   you to engage in worship, prayer, and fellowship right from
                   your phone, ensuring you stay connected to your faith on your
                   schedule.{" "}
-                </div>
-                <div className=" text-xl font-bold mt-5">
+                </p>
+                <p className=" text-xl font-bold mt-5">
                   <em>
                     Prayer line is held on 4th Sundays at 11am and Friday nights
                     at 7pm
                   </em>
-                </div>
+                </p>
                 <div className="my-5">
                   <div>
                     To join the prayer line, dial
@@ -244,7 +251,7 @@ export default function Home() {
               <div className="mt-20">
                 <div className="flex gap-28">
                   <img
-                    className="w-96"
+                    className="w-96 shadow-2xl rounded"
                     src="/firstpic.jpg"
                     alt="people-hugging"
                   />
@@ -309,7 +316,7 @@ export default function Home() {
               <article className="mt-20">
                 <div className="flex gap-28">
                   <img
-                    className="w-96"
+                    className="w-96 shadow-2xl rounded"
                     src="/sundayschool.jpg"
                     alt="people-hugging"
                   />
@@ -364,7 +371,7 @@ export default function Home() {
               <div className="mt-20 mb-10">
                 <div className="flex gap-28">
                   <img
-                    className="w-96 h-96"
+                    className="w-96 h-96 shadow-2xl rounded"
                     src="/prayerline.jpg"
                     alt="people-hugging"
                   />

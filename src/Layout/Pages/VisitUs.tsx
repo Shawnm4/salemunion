@@ -12,16 +12,16 @@ export default function VisitUs() {
   return (
     <>
       {/*Phone  */}
-      <div className=" lg:hidden  ml-8 mt-16">
+      <main className=" lg:hidden  ml-8 mt-16">
         <div
           style={{ fontFamily: "Inter", fontWeight: "200" }}
           className="text-3xl"
         >
           Visit Us
         </div>
-        <div className="text-1xl mt-8">
+        <p className="text-1xl mt-8">
           Feel free to contact us if you have any concerns!
-        </div>
+        </p>
         <div className="text-xl font-bold mt-8">Email</div>
         <div>
           <p
@@ -64,12 +64,16 @@ export default function VisitUs() {
             <FacebookOutlined />
           </a>
         </div>
-      </div>
+      </main>
       <div className="flex justify-center mt-8 lg:hidden">
-        <img className="w-11/12" src="map.png" alt="gpsmap" />
+        <img className="rounded shadow-xl w-11/12" src="map.png" alt="gpsmap" />
       </div>
       <div className="flex justify-center mt-8 mb-8 lg:hidden">
-        <img className="w-11/12" src="SALEM.png" alt="gpsmap" />
+        <img
+          className="w-11/12 rounded shadow-xl"
+          src="SALEM.png"
+          alt="gpsmap"
+        />
       </div>
       <div className="lg:hidden">
         <Footer />
@@ -113,10 +117,20 @@ export default function VisitUs() {
           <div className="flex justify-center">
             <div>
               <div className="mb-10 ">
-                <img style={{ width: "30rem" }} src="map.png" alt="map" />
+                <img
+                  className="rounded shadow-xl"
+                  style={{ width: "30rem" }}
+                  src="map.png"
+                  alt="map"
+                />
               </div>
               <div>
-                <img style={{ width: "30rem" }} src="SALEM.png" alt="salem" />
+                <img
+                  className="shadow-xl rounded"
+                  style={{ width: "30rem" }}
+                  src="SALEM.png"
+                  alt="salem"
+                />
               </div>
             </div>
           </div>
