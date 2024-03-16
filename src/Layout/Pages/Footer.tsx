@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="flex items-center">
               <ul
                 style={{ fontFamily: "Merriweather" }}
-                className="flex gap-1 text-5xl "
+                className="flex gap-1 text-4xl "
               >
                 <li style={{ color: EColors.primary }}>S</li>
                 <li style={{ color: EColors.primary }}>U</li>
@@ -138,7 +138,7 @@ export default function Footer() {
                   <div className="font-bold">Address</div>
 
                   <strong>
-                    4265 Gasburg Road P.O. Box 363. Gasburg, VA 23857
+                    4265 Gasburg Road P.O. Box 383. Gasburg, VA 23857
                   </strong>
                 </div>
               </div>

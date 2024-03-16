@@ -76,9 +76,9 @@ export default function VisitUs() {
       </div>
 
       {/* Desktop */}
-      <div className="mt-24 hidden lg:block ">
+      <div className=" mt-24 hidden lg:block ">
         <main className="flex justify-center gap-60 mb-16">
-          <section className="">
+          <section className="ml-10">
             <p
               className="text-4xl mb-8"
               style={{ fontFamily: "Inter", fontWeight: "200" }}
@@ -105,7 +105,7 @@ export default function VisitUs() {
                 target="_blank"
                 rel="noreferrer"
               >
-                4265 Gasburg Road P.O. Box 363. Gasburg, VA 23857
+                4265 Gasburg Road P.O. Box 383. Gasburg, VA 23857
               </a>
             </p>
           </section>
@@ -121,7 +121,8 @@ export default function VisitUs() {
             </div>
           </div>
         </main>
-
+      </div>
+      <div style={{ backgroundColor: "white" }}>
         <Footer />
       </div>
     </>

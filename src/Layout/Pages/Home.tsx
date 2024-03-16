@@ -22,155 +22,197 @@ export default function Home() {
   }
   return (
     <>
-      <div className=" md:hidden flex justify-center ">
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 gap-6 ">
-            <img src="/homebackground.jpg" alt="burning-bush-logo" />
-            <article
-              style={{
-                fontFamily: "Inter",
-                fontWeight: "300",
-              }}
-              className="text-center text-xl"
-            >
-              <p>"Welcome to our church family,</p>
-              <p> where faith meets love, community, and support."</p>
-            </article>
-            <article
-              style={{ fontFamily: "Inter", fontWeight: "300" }}
-              className="text-center"
-            >
-              <p>
-                Salem Union in Gasburg, Va offers a place of worship and
-                community since 1920. Join us Sundays at 11pm for services
-              </p>
-            </article>
-            <div className="text-center mb-10">
-              <PrimaryButton className="w-1/2 " onClick={navigateToAbout}>
-                About Us
-              </PrimaryButton>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        style={{ backgroundColor: EColors.bggray }}
-        className=" flex md:hidden justify-center "
-      >
-        <div className="">
+      <div className="2xl:hidden">
+        <div className="  flex justify-center ">
           <div className="flex justify-center">
-            <img className="w-3/4 mt-10" src="/crowd2.jpg " alt=" crowd " />
-          </div>
-          <div style={{ fontFamily: "Inter" }} className="flex justify-center">
-            <div className="mt-5 text-center">
-              <strong className="text-xl">Regular Service -</strong>
-              <span style={{ fontWeight: "300" }} className="text-xl">
-                Join us for
-              </span>
-              <div style={{ fontWeight: "300" }} className="text-xl">
-                {" "}
-                service at 11am every Sunday!
-              </div>
-              <div className="mt-5">
-                {" "}
-                Each service is a spiritual journey, designed to connect you
-                with the divine and the community.{" "}
-              </div>
-
-              <div className="mt-5">
-                Begin your worship experience with us through uplifting music
-                and songs. Our Choir leads us in a blend of contemporary and
-                traditional hymns that prepare our hearts for receiving God's
-                Word.
-              </div>
-              <div className="mt-5">
-                Rev. Joreatha Barret delivers thought-provoking and
-                soul-stirring messages based on Scripture These teachings aim to
-                deepen your understanding of the Bible and apply its lessons to
-                modern life.
-              </div>
-              <div className="text-xl font-bold mt-5">
-                <em>Service is held on prayer line on 4th Sundays</em>
-              </div>
-              <div className=" mt-5">
-                <PrimaryButton onClick={navigateToVisit} className="w-40 h-11">
-                  Visit Us
+            <div className="grid grid-cols-1 gap-6 ">
+              <img
+                className="w-full"
+                src="/homebackground.jpg"
+                alt="burning-bush-logo"
+              />
+              <article
+                style={{
+                  fontFamily: "Inter",
+                  fontWeight: "300",
+                }}
+                className="text-center text-xl"
+              >
+                <p>"Welcome to our church family,</p>
+                <p> where faith meets love, community, and support."</p>
+              </article>
+              <article
+                style={{ fontFamily: "Inter", fontWeight: "300" }}
+                className="text-center"
+              >
+                <p>
+                  Salem Union in Gasburg, Va offers a place of worship and
+                  community since 1920. Join us Sundays at 11pm for services
+                </p>
+              </article>
+              <div className="text-center mb-10">
+                <PrimaryButton className="w-1/2 " onClick={navigateToAbout}>
+                  About Us
                 </PrimaryButton>
               </div>
-              <Divider />
-              <div className="mt-5 text-xl">
-                <strong className="">Sunday School -</strong>
-                <span style={{ fontWeight: "300" }}>
-                  {" "}
-                  is held every Sunday at 10am!
+            </div>
+          </div>
+        </div>
+        <div
+          style={{ backgroundColor: EColors.bggray }}
+          className=" flex  justify-center "
+        >
+          <div className="">
+            <div className="flex justify-center">
+              <img className="w-3/4 mt-10" src="/crowd2.jpg " alt=" crowd " />
+            </div>
+            <div
+              style={{ fontFamily: "Inter" }}
+              className="flex justify-center"
+            >
+              <div className="mt-5 text-center">
+                <strong className="text-xl">Regular Service -</strong>
+                <span style={{ fontWeight: "300" }} className="text-xl">
+                  Join us for
                 </span>
-              </div>
-              <div className="mt-5">
-                Designed for all ages, our Sunday School provides a warm,
-                engaging environment where attendees can journey through faith
-                together
-              </div>
+                <div style={{ fontWeight: "300" }} className="text-xl">
+                  {" "}
+                  service at 11am every Sunday!
+                </div>
+                <div className="mt-5">
+                  {" "}
+                  Each service is a spiritual journey, designed to connect you
+                  with the divine and the community.{" "}
+                </div>
 
-              <div className="mt-5">
-                Our goal is to help each participant grow in their faith and
-                understanding of God’s Word. Through biblical teachings, prayer,
-                and reflection, students are encouraged to develop a deeper
-                relationship with God and apply their faith to daily life.
-              </div>
-              <div className="mt-5">
-                Sunday School at Salem Union is more than just learning; it’s
-                about building connections. We foster a nurturing environment
-                where students<br></br> support and learn from one another,
-                forming lasting friendships grounded in faith.
-              </div>
-              <div className="text-xl font-bold mt-5">
-                <em>Sunday school is not held on 4th Sundays</em>
-              </div>
-              <Divider />
-              <div className="mt-5 text-xl">
-                <strong className="">
-                  Salem Union Prayer Lines and Fourth Sunday Service
-                </strong>
-              </div>
-              <div className="mt-5">
-                In today’s fast-paced world, finding time for faith and
-                community can be a challenge. That’s why Salem Union, located in
-                the heart of Gasburg,Virginia, is excited to offer our Cell
-                Phone Church Service—a mobile spiritual experience designed for
-                busy lives. Accessible from anywhere, our service allows you to
-                engage in worship, prayer, and fellowship right from your phone,
-                ensuring you stay connected to your faith on your schedule.{" "}
-              </div>
-              <div className="mt-5">
-                <strong>
-                  Prayer line is held on 4th Sundays at 11am and Friday nights
-                  at 7pm
-                </strong>
-              </div>
-              <div
-                style={{
-                  marginTop: "1rem",
-                  height: "22rem",
-                  textAlign: "center",
-                  color: "white",
-                }}
-                className={styles.backgroundprayerline}
-              >
-                <em>
-                  "Faith is not believing that God can, it's knowing that He
-                  will."
-                </em>
-                <div>- Rev. Joreatha Barrett</div>
+                <div className="mt-5">
+                  Begin your worship experience with us through uplifting music
+                  and songs. Our Choir leads us in a blend of contemporary and
+                  traditional hymns that prepare our hearts for receiving God's
+                  Word.
+                </div>
+                <div className="mt-5">
+                  Rev. Joreatha Barret delivers thought-provoking and
+                  soul-stirring messages based on Scripture These teachings aim
+                  to deepen your understanding of the Bible and apply its
+                  lessons to modern life.
+                </div>
+                <div className="text-xl font-bold mt-5">
+                  <em>Service is held on church/prayer line on 4th Sundays</em>
+                </div>
+                <div className="my-5">
+                  <div>
+                    To join the service, dial
+                    <span className=" ">
+                      <a href="tel:1602-610-2089">1(602)-610-2089</a>
+                    </span>
+                  </div>
+                  <span>Access number: 4090000</span>
+                </div>
+                <div className=" mt-5">
+                  <PrimaryButton
+                    onClick={navigateToVisit}
+                    className="w-40 h-11"
+                  >
+                    Visit Us
+                  </PrimaryButton>
+                </div>
+                <Divider />
+                <div className="mt-5 text-xl">
+                  <strong className="">Sunday School -</strong>
+                  <span style={{ fontWeight: "300" }}>
+                    {" "}
+                    is held every Sunday at 10am!
+                  </span>
+                </div>
+                <div className="mt-5">
+                  Designed for all ages, our Sunday School provides a warm,
+                  engaging environment where attendees can journey through faith
+                  together
+                </div>
+
+                <div className="mt-5">
+                  Our goal is to help each participant grow in their faith and
+                  understanding of God’s Word. Through biblical teachings,
+                  prayer, and reflection, students are encouraged to develop a
+                  deeper relationship with God and apply their faith to daily
+                  life.
+                </div>
+                <div className="mt-5">
+                  Sunday School at Salem Union is more than just learning; it’s
+                  about building connections. We foster a nurturing environment
+                  where students<br></br> support and learn from one another,
+                  forming lasting friendships grounded in faith.
+                </div>
+                <div className="text-xl font-bold mt-5">
+                  <em>Sunday school is not held on 4th Sundays</em>
+                </div>
+                <div className="my-5">
+                  <div>
+                    To join the Sunday School line, dial
+                    <span className=" ">
+                      <a href="tel:1701-802-5336">1(701)-802-5336</a>
+                    </span>
+                  </div>
+                  <span>Access number: 4399384</span>
+                </div>
+                <Divider />
+                <div className="mt-5 text-xl">
+                  <strong className="">
+                    Salem Union Prayer Lines and Fourth Sunday Service
+                  </strong>
+                </div>
+                <div className="mt-5">
+                  In today’s fast-paced world, finding time for faith and
+                  community can be a challenge. That’s why Salem Union, located
+                  in the heart of Gasburg,Virginia, is excited to offer our Cell
+                  Phone Church Service—a mobile spiritual experience designed
+                  for busy lives. Accessible from anywhere, our service allows
+                  you to engage in worship, prayer, and fellowship right from
+                  your phone, ensuring you stay connected to your faith on your
+                  schedule.{" "}
+                </div>
+                <div className=" text-xl font-bold mt-5">
+                  <em>
+                    Prayer line is held on 4th Sundays at 11am and Friday nights
+                    at 7pm
+                  </em>
+                </div>
+                <div className="my-5">
+                  <div>
+                    To join the prayer line, dial
+                    <span className=" ">
+                      {" "}
+                      <a href="tel:1602-610-2089">1(602)-610-2089</a>
+                    </span>
+                  </div>
+                  <span>Access number: 4090000</span>
+                </div>
+                <div
+                  style={{
+                    marginTop: "1rem",
+                    height: "28rem",
+                    textAlign: "center",
+                    color: "white",
+                  }}
+                  className={styles.backgroundprayerline}
+                >
+                  <em>
+                    "Faith is not believing that God can, it's knowing that He
+                    will."
+                  </em>
+                  <div>- Rev. Joreatha Barrett</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="md:hidden">
-        <Footer />
+        <div className="">
+          <Footer />
+        </div>
       </div>
       {/* Desktop */}
-      <div className=" hidden 2xl:inline ">
+      <div className=" hidden 2xl:inline  ">
         <div style={{ height: "50rem" }}>
           <article className={styles.background}>
             <h1
@@ -232,7 +274,17 @@ export default function Home() {
                       and apply its lessons to modern life.
                     </p>
                     <div className="text-xl font-bold">
-                      <em>Service is held on prayer line on 4th Sundays</em>
+                      <em>
+                        Service is held on church/prayer line on 4th Sundays at
+                        10am
+                      </em>
+                    </div>
+                    <div className="my-5">
+                      <div>
+                        To join the service, dial
+                        <span className=" "> 1(602)-610-2089</span>
+                      </div>
+                      <span>Access number: 4090000</span>
                     </div>
                     <div className="">
                       <div className="font-bold">Visit us here</div>
@@ -291,7 +343,17 @@ export default function Home() {
                       faith.
                     </p>
                     <div className="text-xl font-bold">
-                      <em>Sunday school is not held on 4th Sundays</em>
+                      <em>
+                        Sunday school is held on the Sunday School line on 4th
+                        Sundays at 9am
+                      </em>
+                    </div>
+                    <div className="my-5">
+                      <div>
+                        To join the Sunday School line, dial
+                        <span className=" "> 1(701)-802-5336 </span>
+                      </div>
+                      <span>Access number: 4399384</span>
                     </div>
                   </div>
                 </div>
@@ -326,15 +388,17 @@ export default function Home() {
                         ensuring you stay connected to your faith on your
                         schedule.
                       </p>
-                      <p
-                        style={{ fontWeight: "100" }}
-                        className=" text-4xl mb-4 "
-                      >
-                        Prayer line is held on 4th Sundays at 11am and Friday
-                        nights at 7pm
+                      <p style={{}} className=" text-xl font-bold">
+                        <em>Prayer line is held on Friday nights at 7pm</em>
                       </p>
                     </div>
-                    <div>To join the prayer line call 434-277-9565 </div>
+                    <div className="my-5">
+                      <div>
+                        To join the prayer line, dial
+                        <span className=" "> 1(602)-610-2089</span>
+                      </div>
+                      <span>Access number: 4090000</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -365,6 +429,15 @@ export default function Home() {
           <Footer />
         </div>
       </div>
+      {/*Tablet
+       */}
+      {/* <div className="2xl:hidden md:inline-block hidden">
+        <div className={styles.}>
+
+        </div>
+      </div> */}
     </>
   );
 }
+
+//Sunday school number is 1701 802 5336 access number is 4399384

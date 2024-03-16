@@ -117,14 +117,14 @@ export default function AboutUs() {
       </div>
 
       {/* Desktop */}
-      <div className="hidden lg:inline-block">
+      <div className="hidden md:inline-block">
         <header className={styles.backgroundfirst}>
           <section className="h-96">
             <div
               style={{ fontFamily: "Inter", fontWeight: "200" }}
               className=" text-3xl h-full text-white flex justify-center items-center"
             >
-              <article>
+              <article className="md:w-3/4">
                 <p>
                   "And let us consider how we may spur one another on toward
                   <br></br>love and good deeds, not giving up meeting together,
@@ -245,7 +245,8 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
-        <div className="flex justify-center">
+
+        <div className="flex justify-center hidden lg:flex ">
           <div className="grid grid-cols-4 gap-2 grid-rows-2">
             <img
               style={{ height: "20rem", width: "20rem" }}

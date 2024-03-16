@@ -112,7 +112,7 @@ export default function Navigation() {
             </div>
           </Drawer>
         </>
-        <section className="flex justify-between mt-1 gap-14 ">
+        <section className="flex justify-between mt-1 gap-24 md:gap-44 ">
           <div className="flex items-center  text-3xl ">
             <Space>
               <span className="ml-1 md:ml-5">
@@ -153,11 +153,11 @@ export default function Navigation() {
         style={{
           zIndex: "1000",
         }}
-        className="hidden md:flex justify-between items-center sticky top-0    w-full h-44 bg-white shadow-md"
+        className="hidden lg:flex gap-20 justify-between items-center sticky top-0 w-full h-44 bg-white shadow-md"
       >
         <div
           onClick={() => navigate(ERoute.ROOT)}
-          className=" flex ml-40 mt-10 cursor-pointer mb-5   "
+          className=" flex ml-40 lg:ml-36 mt-10 cursor-pointer mb-5    "
         >
           <div className="flex ">
             <img src="/salemlogo.png" alt="burning-bush-logo" />
@@ -182,7 +182,7 @@ export default function Navigation() {
             </div>
           </div>
         </div>
-        <ul className="flex gap-8 text-lg md:mr-40 items-center ">
+        <ul className="flex gap-5 text-lg  items-center lg:mr-14 ">
           <li
             style={{ transition: "color 0.2s" }}
             onMouseEnter={mouseEnter}
@@ -237,7 +237,7 @@ export default function Navigation() {
           >
             Visit Us
           </li>
-          <li>
+          <li className="">
             <PrimaryButton className="">Donate</PrimaryButton>
           </li>
         </ul>
