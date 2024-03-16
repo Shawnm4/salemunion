@@ -12,7 +12,7 @@ export default function VisitUs() {
   return (
     <>
       {/*Phone  */}
-      <div className=" ml-8 mt-16">
+      <div className=" lg:hidden  ml-8 mt-16">
         <div
           style={{ fontFamily: "Inter", fontWeight: "200" }}
           className="text-3xl"
@@ -65,16 +65,18 @@ export default function VisitUs() {
           </a>
         </div>
       </div>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-8 lg:hidden">
         <img className="w-11/12" src="map.png" alt="gpsmap" />
       </div>
-      <div className="flex justify-center mt-8 mb-8">
+      <div className="flex justify-center mt-8 mb-8 lg:hidden">
         <img className="w-11/12" src="SALEM.png" alt="gpsmap" />
       </div>
-      <Footer />
+      <div className="lg:hidden">
+        <Footer />
+      </div>
 
       {/* Desktop */}
-      <div className="mt-24 hidden ">
+      <div className="mt-24 hidden lg:block ">
         <main className="flex justify-center gap-60 mb-16">
           <section className="">
             <p
@@ -119,6 +121,7 @@ export default function VisitUs() {
             </div>
           </div>
         </main>
+
         <Footer />
       </div>
     </>

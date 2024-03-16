@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <>
       <footer
-        className=" md:hidden pt-5"
+        className=" lg:hidden pt-5"
         style={{ backgroundColor: EColors.bggray }}
       >
         <div className="ml-10">
@@ -99,11 +99,11 @@ export default function Footer() {
 
       {/*  */}
       <footer
-        className="hidden md:inline h-9/12"
+        className="flex justify-center hidden  lg:inline h-9/12"
         style={{ backgroundColor: EColors.bggray }}
       >
         <main className="flex justify-center ">
-          <div className="flex gap-96 mb-14">
+          <div className="flex gap-96 mb-14 ">
             <section>
               <div className="grid grid-cols-1 gap-4">
                 <div className="flex  mt-16">
