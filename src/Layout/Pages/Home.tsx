@@ -104,7 +104,7 @@ export default function Home() {
                   <div>
                     To join the service, dial
                     <span className=" ">
-                      <a href="tel:1602-610-2089">1(602)-610-2089</a>
+                      <a href="tel:1602-610-2089"> 1(602)-610-2089</a>
                     </span>
                   </div>
                   <span>Access number: 4090000</span>
@@ -151,7 +151,7 @@ export default function Home() {
                   <div>
                     To join the Sunday School line, dial
                     <span className=" ">
-                      <a href="tel:1701-802-5336">1(701)-802-5336</a>
+                      <a href="tel:1701-802-5336"> 1(701)-802-5336</a>
                     </span>
                   </div>
                   <span>Access number: 4399384</span>
@@ -183,7 +183,7 @@ export default function Home() {
                     To join the prayer line, dial
                     <span className=" ">
                       {" "}
-                      <a href="tel:1602-610-2089">1(602)-610-2089</a>
+                      <a href="tel:1602-610-2089"> 1(602)-610-2089</a>
                     </span>
                   </div>
                   <span>Access number: 4090000</span>
@@ -411,7 +411,6 @@ export default function Home() {
             <div className={styles.backgroundfirst}></div>
             <div className={styles.backgroundsecond}></div>
             <div className={styles.backgroundthird}></div>
-            {/* <img src="/communion.jpg" alt="communion" /> */}
             <div className="flex justify-center items-center w-full absolute z-10">
               <div className="text-4xl">
                 <p style={{ fontWeight: "100", color: "white" }}>
@@ -429,15 +428,6 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-      {/*Tablet
-       */}
-      {/* <div className="2xl:hidden md:inline-block hidden">
-        <div className={styles.}>
-
-        </div>
-      </div> */}
     </>
   );
 }
-
-//Sunday school number is 1701 802 5336 access number is 4399384
