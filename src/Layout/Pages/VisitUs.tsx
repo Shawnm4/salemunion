@@ -135,9 +135,9 @@ export default function VisitUs() {
             </div>
           </div>
         </main>
-      </div>
-      <div style={{ backgroundColor: "white" }}>
-        <Footer />
+        <div style={{ backgroundColor: "white" }}>
+          <Footer />
+        </div>
       </div>
     </>
   );

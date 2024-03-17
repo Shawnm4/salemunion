@@ -86,28 +86,28 @@ export default function Home() {
                   {" "}
                   service at 11am every Sunday!
                 </div>
-                <p className="mt-5">
+                <p className="mt-5 p-4">
                   {" "}
                   Each service is a spiritual journey, designed to connect you
                   with the divine and the community.{" "}
                 </p>
 
-                <p className="mt-5">
+                <p className="mt-5 p-4">
                   Begin your worship experience with us through uplifting music
                   and songs. Our Choir leads us in a blend of contemporary and
                   traditional hymns that prepare our hearts for receiving God's
                   Word.
                 </p>
-                <p className="mt-5">
+                <p className="mt-5 p-4">
                   Rev. Joreatha Barret delivers thought-provoking and
                   soul-stirring messages based on Scripture These teachings aim
                   to deepen your understanding of the Bible and apply its
                   lessons to modern life.
                 </p>
-                <p className="text-xl font-bold mt-5">
+                <p className="text-xl font-bold mt-5 p-4">
                   <em>Service is held on church/prayer line on 4th Sundays</em>
                 </p>
-                <div className="my-5">
+                <div className="my-5 p-4">
                   <div>
                     To join the service, dial
                     <span className=" ">
@@ -132,26 +132,26 @@ export default function Home() {
                     is held every Sunday at 10am!
                   </span>
                 </div>
-                <p className="mt-5">
+                <p className="mt-5 p-4">
                   Designed for all ages, our Sunday School provides a warm,
                   engaging environment where attendees can journey through faith
                   together
                 </p>
 
-                <p className="mt-5">
+                <p className="mt-5 p-4">
                   Our goal is to help each participant grow in their faith and
                   understanding of God’s Word. Through biblical teachings,
                   prayer, and reflection, students are encouraged to develop a
                   deeper relationship with God and apply their faith to daily
                   life.
                 </p>
-                <p className="mt-5">
+                <p className="mt-5 p-4">
                   Sunday School at Salem Union is more than just learning; it’s
                   about building connections. We foster a nurturing environment
                   where students<br></br> support and learn from one another,
                   forming lasting friendships grounded in faith.
                 </p>
-                <p className="text-xl font-bold mt-5">
+                <p className="text-xl font-bold mt-5 p-4">
                   <em>Sunday school is not held on 4th Sundays</em>
                 </p>
                 <div className="my-5">
@@ -169,7 +169,7 @@ export default function Home() {
                     Salem Union Prayer Lines and Fourth Sunday Service
                   </strong>
                 </div>
-                <p className="mt-5">
+                <p className="mt-5 p-4">
                   In today’s fast-paced world, finding time for faith and
                   community can be a challenge. That’s why Salem Union, located
                   in the heart of Gasburg,Virginia, is excited to offer our Cell

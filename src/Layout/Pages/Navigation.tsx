@@ -38,6 +38,10 @@ export default function Navigation() {
     navigate(ERoute.VISIT);
     onCloseDrawer();
   }
+  function navigateToDonate() {
+    window.scrollTo(0, document.body.scrollHeight);
+    onCloseDrawer();
+  }
 
   return (
     <>
@@ -103,7 +107,10 @@ export default function Navigation() {
                     </div>
                   </li>
                   <li className="text-center ">
-                    <PrimaryButton className="text-1xl h-16 w-40">
+                    <PrimaryButton
+                      onClick={navigateToDonate}
+                      className="text-1xl h-16 w-40"
+                    >
                       DONATE
                     </PrimaryButton>
                   </li>
@@ -115,7 +122,7 @@ export default function Navigation() {
         <section className="flex justify-between mt-1 gap-24 md:gap-44 ">
           <div className="flex items-center  text-3xl ">
             <Space>
-              <span className="ml-1 md:ml-5">
+              <span className="ml-4 md:ml-5">
                 <MenuOutlined onClick={onOpenDrawer} />
               </span>
             </Space>
@@ -210,8 +217,8 @@ export default function Navigation() {
           >
             Visit Us
           </li>
-          <li className="">
-            <PrimaryButton className="">Donate</PrimaryButton>
+          <li onClick={navigateToDonate} className="">
+            <PrimaryButton className="cursor-pointer">Donate</PrimaryButton>
           </li>
         </ul>
       </nav>

@@ -19,10 +19,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer
-        className=" lg:hidden pt-5"
-        style={{ backgroundColor: EColors.bggray }}
-      >
+      <footer className=" md:hidden pt-5" style={{ backgroundColor: "white" }}>
         <div className="ml-10">
           <div className="flex mb-8">
             <img className="w-20" src="/salemlogo.png" alt="salemunionlogo" />
@@ -93,13 +90,24 @@ export default function Footer() {
                 <FacebookOutlined />
               </a>
             </div>
+            <div className="mt-8 ">
+              <div
+                style={{ fontFamily: "Inter", fontWeight: "200" }}
+                className="text-4xl mb-2"
+              >
+                Send a donation to<br></br> the church cashapp!
+              </div>
+              <div className="flex">
+                <div className="text-4xl">$SalemRzua</div>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
 
       {/*  */}
       <footer
-        className=" justify-center hidden  lg:inline h-9/12"
+        className=" justify-center hidden  md:flex  h-9/12 p-5"
         style={{ backgroundColor: EColors.bggray }}
       >
         <main className="flex justify-center ">
@@ -143,47 +151,59 @@ export default function Footer() {
                 </div>
               </div>
             </section>
-            <section className="flex gap-20">
-              <div className=" ">
+            <section>
+              <div className="flex gap-20">
+                <div className=" ">
+                  <div
+                    style={{ fontFamily: "Inter", fontWeight: "200" }}
+                    className="flex  mt-16 text-3xl mb-6 "
+                  >
+                    About us
+                  </div>
+                  <div className="grid grid-cols-1 gap-2 underline cursor-pointer">
+                    <p onClick={navigateToVisit}>Contact Us</p>
+                    <p onClick={navigateToAboutUs}>Our Goals</p>
+                  </div>
+                </div>
+                <div>
+                  <p
+                    style={{ fontFamily: "Inter", fontWeight: "200" }}
+                    className="flex  mt-16 text-3xl mb-6 "
+                  >
+                    Media
+                  </p>
+                  <div className="flex justify-center text-3xl ">
+                    <a
+                      href=" https://www.facebook.com/SalemUnionRZUA"
+                      target="_blank"
+                    >
+                      <FacebookOutlined />
+                    </a>
+                  </div>
+                </div>
+                {/* <div>
+                  <p
+                    style={{ fontFamily: "Inter", fontWeight: "200" }}
+                    className="flex  mt-16 text-3xl mb-6 "
+                  >
+                    Other
+                  </p>
+                  <p className="grid grid-cols-1 gap-2 underline cursor-pointer">
+                    Donate
+                  </p>
+                </div> */}
+              </div>
+              <div className="mt-20 ">
                 <div
                   style={{ fontFamily: "Inter", fontWeight: "200" }}
-                  className="flex  mt-16 text-3xl mb-6 "
+                  className="text-4xl mb-2"
                 >
-                  About us
+                  Send a donation to<br></br> the church cashapp!
                 </div>
-                <div className="grid grid-cols-1 gap-2 underline cursor-pointer">
-                  <p onClick={navigateToVisit}>Contact Us</p>
-                  <p onClick={navigateToAboutUs}>Our Goals</p>
-                </div>
-              </div>
-              <div>
-                <p
-                  style={{ fontFamily: "Inter", fontWeight: "200" }}
-                  className="flex  mt-16 text-3xl mb-6 "
-                >
-                  Media
-                </p>
-                <div className="flex justify-center text-3xl ">
-                  <a
-                    href=" https://www.facebook.com/SalemUnionRZUA"
-                    target="_blank"
-                  >
-                    <FacebookOutlined />
-                  </a>
+                <div className="flex">
+                  <div className="text-4xl">$SalemRzua</div>
                 </div>
               </div>
-              <div>
-                <p
-                  style={{ fontFamily: "Inter", fontWeight: "200" }}
-                  className="flex  mt-16 text-3xl mb-6 "
-                >
-                  Other
-                </p>
-                <p className="grid grid-cols-1 gap-2 underline cursor-pointer">
-                  Donate
-                </p>
-              </div>
-              /
             </section>
           </div>
         </main>
