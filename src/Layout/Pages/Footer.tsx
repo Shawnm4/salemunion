@@ -16,6 +16,12 @@ export default function Footer() {
   function navigateToAboutUs() {
     navigate(ERoute.ABOUTUS);
   }
+  function mouseEnter(e: any) {
+    e.currentTarget.style.color = EColors.hover;
+  }
+  function mouseLeave(e: any) {
+    e.currentTarget.style.color = "";
+  }
 
   return (
     <>
@@ -90,31 +96,20 @@ export default function Footer() {
                 <FacebookOutlined />
               </a>
             </div>
-            <div className="mt-8 ">
-              <div
-                style={{ fontFamily: "Inter", fontWeight: "200" }}
-                className="text-4xl mb-2"
-              >
-                Send a donation to<br></br> the church cashapp!
-              </div>
-              <div className="flex">
-                <div className="text-4xl">$SalemRzua</div>
-              </div>
-            </div>
           </div>
         </div>
       </footer>
 
       {/*  */}
       <footer
-        className=" justify-center hidden  md:flex  h-9/12 p-5"
+        className=" justify-center hidden  md:flex   "
         style={{ backgroundColor: EColors.bggray }}
       >
         <main className="flex justify-center ">
-          <div className="flex gap-96 mb-14 ">
+          <div className="flex gap-96 mb-12 ">
             <section>
               <div className="grid grid-cols-1 gap-4">
-                <div className="flex  mt-16">
+                <div className="flex  mt-4">
                   <img
                     className=""
                     src="/salemlogo.png"
@@ -161,8 +156,20 @@ export default function Footer() {
                     About us
                   </div>
                   <div className="grid grid-cols-1 gap-2 underline cursor-pointer">
-                    <p onClick={navigateToVisit}>Contact Us</p>
-                    <p onClick={navigateToAboutUs}>Our Goals</p>
+                    <p
+                      onMouseEnter={mouseEnter}
+                      onMouseLeave={mouseLeave}
+                      onClick={navigateToVisit}
+                    >
+                      Contact Us
+                    </p>
+                    <p
+                      onMouseEnter={mouseEnter}
+                      onMouseLeave={mouseLeave}
+                      onClick={navigateToAboutUs}
+                    >
+                      Our Goals
+                    </p>
                   </div>
                 </div>
                 <div>
@@ -192,17 +199,6 @@ export default function Footer() {
                     Donate
                   </p>
                 </div> */}
-              </div>
-              <div className="mt-20 ">
-                <div
-                  style={{ fontFamily: "Inter", fontWeight: "200" }}
-                  className="text-4xl mb-2"
-                >
-                  Send a donation to<br></br> the church cashapp!
-                </div>
-                <div className="flex">
-                  <div className="text-4xl">$SalemRzua</div>
-                </div>
               </div>
             </section>
           </div>

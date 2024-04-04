@@ -160,14 +160,18 @@ export default function Navigation() {
         style={{
           zIndex: "1000",
         }}
-        className="hidden lg:flex gap-20 justify-between items-center sticky top-0 w-full h-44 bg-white shadow-md"
+        className="hidden lg:flex gap-20 justify-between items-center sticky top-0 w-full h-24 bg-white shadow-md"
       >
         <div
           onClick={() => navigate(ERoute.ROOT)}
           className=" flex ml-40 lg:ml-36 mt-10 cursor-pointer mb-5    "
         >
-          <div className="flex ">
-            <img src="/salemlogo.png" alt="burning-bush-logo" />
+          <div className="flex  justify-end">
+            <img
+              className="w-1/2 self-end"
+              src="/salemlogo.png"
+              alt="burning-bush-logo"
+            />
           </div>
           <div className="flex items-center">
             <div>
@@ -208,6 +212,7 @@ export default function Navigation() {
           >
             About Us
           </li>
+
           <li
             style={{ transition: "color 0.2s" }}
             onMouseEnter={mouseEnter}
@@ -215,10 +220,7 @@ export default function Navigation() {
             className="cursor-pointer"
             onClick={navigateToVisit}
           >
-            Visit Us
-          </li>
-          <li onClick={navigateToDonate} className="">
-            <PrimaryButton className="cursor-pointer">Donate</PrimaryButton>
+            <PrimaryButton className="cursor-pointer">Visit Us</PrimaryButton>
           </li>
         </ul>
       </nav>

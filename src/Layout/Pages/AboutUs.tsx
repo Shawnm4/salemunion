@@ -241,8 +241,8 @@ export default function AboutUs() {
         <section className="mt-20" style={{ backgroundColor: EColors.bggray }}>
           <div className="flex justify-center ">
             <div className="mt-10">
-              <div className="flex justify-between ">
-                <div className="ml-20">
+              <div className="flex  gap-24 ">
+                <div className="ml-20 justify-self-end ">
                   <h1
                     className="text-5xl mb-10"
                     style={{
@@ -252,32 +252,33 @@ export default function AboutUs() {
                   >
                     Salem Unions Goals
                   </h1>
-                  <article className="grid grid-cols-1 gap-6">
-                    <p className="w-1/2">
-                      Aim to deepen the congregation's faith and understanding
-                      of the Bible through regular study groups, retreats, and
-                      discipleship programs.
+                  <article className="grid grid-cols-1 gap-6 ">
+                    <p className="text-center ">
+                      &#8226; Aim to deepen the congregation's faith and
+                      understanding of the Bible through regular study groups,
+                      retreats, and discipleship programs.
                     </p>
-                    <p className="w-1/2">
-                      Establish and expand outreach programs to serve the local
-                      community's needs, such as food banks, homeless shelters,
-                      and support for vulnerable populations.
+                    <p className="text-center">
+                      &#8226; Establish and expand outreach programs to serve
+                      the local community's needs, such as food banks, homeless
+                      shelters, and support for vulnerable populations.
                     </p>
-                    <p className="w-1/2">
-                      Ensure that the church is a place where everyone feels
-                      welcomed and valued, regardless of their background or
-                      life situation, fostering a sense of belonging and
+                    <p className="text-center">
+                      &#8226; Ensure that the church is a place where everyone
+                      feels welcomed and valued, regardless of their background
+                      or life situation, fostering a sense of belonging and
                       inclusivity.
                     </p>
-                    <p className="w-1/2">
-                      Develop engaging programs for children and youth that
-                      encourage their spiritual growth and build a strong,
+                    <p className="text-center">
+                      &#8226; Develop engaging programs for children and youth
+                      that encourage their spiritual growth and build a strong,
                       supportive community among young believers.
                     </p>
-                    <p className="w-1/2 mb-10">
-                      Encourage active participation and leadership within the
-                      church and the broader community, highlighting the
-                      importance of stewardship and the joy of serving others.
+                    <p className="text-center mb-10">
+                      &#8226; Encourage active participation and leadership
+                      within the church and the broader community, highlighting
+                      the importance of stewardship and the joy of serving
+                      others.
                     </p>
                   </article>
                 </div>
