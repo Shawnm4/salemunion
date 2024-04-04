@@ -111,7 +111,7 @@ export default function Footer() {
               <div className="grid grid-cols-1 gap-4">
                 <div className="flex  mt-4">
                   <img
-                    className=""
+                    className="w-1/4"
                     src="/salemlogo.png"
                     alt="burning-bush-logo"
                   />
